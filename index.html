@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description"
+    content="Web hecha para mostrar los contenidos vistos en el curso de Frontend que dictó Le Wagon" />
+  <meta name="author" content="Lucia Briongos" />
+
+  <!-- Titulo de la web -->
+  <title>Gatitu</title>
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+
+  <!-- Bootstrap -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href='style.css' rel='stylesheet'>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+
+  <!-- Hoja de estilo CSS -->
+  <link href='style.css' rel='stylesheet'>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+      <!-- Logo, link a parte principal -->
+      <a href="#home" data-ancla="home">
+        <img src="imagen\icono.jpg" alt="" class="logo">
+      </a>
+      <!-- Botón responsive -->
+      <button class="navbar-toggler navbar-toggler-right text-uppercase rounded" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <!-- Otras secciones -->
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown mx-0 mx-lg-1">
+            <a class="nav-link dropdown-toggle py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#" id="navbarDropdown"
+              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Secciones
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#memes">Memes</a>
+              <a class="dropdown-item" href="#videos">Videos</a>
+              <a class="dropdown-item" href="#testimonio">Testimonios</a>
+            </div>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección principal -->
+  <div class="principal text-center justify-content-center" id="home">
+    <div class="container bienvenido">
+      <h1>Bienvenidos a Gatitu</h1>
+      <p>Una página web para mostrar todo lo aprendido en el curso de Introducción a la programación de <strong>Le
+          Wagon</strong></p>
+      <a href="https://www.lewagon.com/es" target="_blank" class="btn rounded font-weight-bold">Conocelos</a>
+    </div>
+  </div>
+
+  <!-- Secciones-->
+  <div id="secciones">
+    <div class="container">
+      <div class="page-section-heading text-center mb-0 mt-5">
+        <h2>Secciones</h2>
+        <p>Elementos para toda web, que sirven para la cartera de la dama y/o el bolsillo del caballero</p>
+        <hr>
+
+    </div>
+
+    <!-- Sección memes-->
+    <div class="memes m-5 text-center ancla" id="memes">
+      <h3>Memes</h3>
+      <p>Sección con los mejores memes. ¡Votá cuánto te gustan!</p>
+      <div class="cards">
+        <!-- Meme 1 -->
+        <div class="card-category">
+          <img class="card-img-top" data-toggle="modal" data-target="#memeModal1" src="imagen/meme1.jpg"
+            alt="-Me dijiste que no tomabas. -Buenas decisiones.">
+          <div class="card-footer fixed-bottom">
+            <ul class="ratings row">
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Meme 2 -->
+        <div class="card-category">
+          <img class="card-img-top" data-toggle="modal" data-target="#memeModal2" src="imagen/meme2.jpg"
+            alt="Cuando el que te gusta pasa a tu lado y tú tratas de actuar natural">
+          <div class="card-footer fixed-bottom">
+            <ul class="ratings row">
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Meme 3 -->
+        <div class="card-category">
+          <img class="card-img-top" data-toggle="modal" data-target="#memeModal3" src="imagen/meme3.jpg"
+            alt="Cuando tu gato se convierte en un capuchino">
+          <div class="card-footer fixed-bottom">
+            <ul class="ratings row">
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Meme 4 -->
+        <div class="card-category">
+          <img class="card-img-top" data-toggle="modal" data-target="#memeModal4" src="imagen/meme4.jpg"
+            alt="Fui a buscar mi pelota debajo de tu cama... Karen, necesitamos ¡HABLAR!">
+          <div class="pin" title="El elegido de Lucia"><i class="fas fa-medal"></i></div> <!-- Distintivo especial -->
+          <div class="card-footer fixed-bottom">
+            <ul class="ratings row">
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Meme 5 -->
+        <div class="card-category">
+          <img class="card-img-top" data-toggle="modal" data-target="#memeModal5" src="imagen/meme5.jpg"
+            alt="Cuando llevas apenas 2 semanas de gym y no ves cambios... ia stoy arto">
+          <div class="card-footer fixed-bottom">
+            <ul class="ratings row">
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Meme 6 -->
+        <div class="card-category">
+          <img class="card-img-top" data-toggle="modal" data-target="#memeModal6" src="imagen/meme6.jpg"
+            alt="-¿Quién murió y resucitó para salvar el mundo? -Jesús -¿Y por qué pusiste Goku?">
+          <div class="card-footer fixed-bottom">
+            <ul class="ratings row">
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección videos -->
+    <div class="text-center ancla mb-0 mt-5" id="videos">
+      <h3>Videos</h3>
+      <p>¿Cuál de los videos es mejor?</p>
+      <div class="cardsvi">
+        <div class="card-category" data-toggle="modal" data-target="#videoModal1">
+          <iframe width="450" height="315" class="col-12" src="https://www.youtube.com/embed/Dfx55uI4tYE" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <button type="button" id="A" value=false class="btn viBtn rounded font-weight-bold col-4">¡Es el mejor!</button>
+        </div>
+        <div class="card-category" data-toggle="modal" data-target="#videoModal2">
+          <iframe width="450" height="315" class="col-12" src="https://www.youtube.com/embed/G3VQzqjmv-0" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <button type="button" id="B" value=false class="btn viBtn rounded font-weight-bold col-4">¡Es el mejor!</button>
+        </div>
+      </div>
+      <button type="button" id="C" value=false class="btn rounded font-weight-bold mt-3">Volver a votar</button>
+    </div>
+
+    <!-- Sección testimonios-->
+    <div class="text-center ancla mb-0 mt-5" id="testimonio">
+      <h3>Testimonios</h3>
+      <p>Que opinaron otro usuarios sobre esta página web</p>
+      <!-- Testimonio 1-->
+      <div class="testim">
+        <img src="imagen/test1.jpg" class="avatar-large">
+        <div class="testim-content text-left">
+          <p class="muted font-weight-bold">03 Agosto 2020</p>
+          <p id="cat" data-texto="¡Miauuu miau! Mia mia miau miau maiaaauuu miiau mia miau miau."
+            data-translate="¡Tremenda página! Tiene que ganar premio por ser de las mejores"> ¡Miauuu miau! Mia mia
+            miau miau maiaaauuu miiau mia miau miau.</p>
+        </div>
+        <div class="testim-actions">
+          <a href="javascript:void(0)" id="catBtn" class="btn rounded font-weight-bold">Ver traducido</a>
+        </div>
+      </div>
+      <!-- Testimonio 2-->
+      <div class="testim">
+        <img src="imagen/test2.jpg" class="avatar-large">
+        <div class="testim-content text-left">
+          <p class="muted font-weight-bold">04 Agosto 2020</p>
+          <p id="dog" data-texto="Guauu guau gua guaau. Gu guauuu guau guau"
+            data-translate="Voy a pedir una página web sobre mí. A mi esclava le va a gustar"> Guauu guau gua guaau.
+            Gu guauuu guau guau</p>
+        </div>
+        <div class="testim-actions">
+          <a href="javascript:void(0)" id="dogBtn" class="btn rounded font-weight-bold">Ver traducido</a>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+  <!-- Contacto-->
+  <div class="container text-center ancla mb-0 mt-5" id="contacto">
+    <h3>Contacto</h3>
+    <p>Para consultarme por esta u otra bella web, mandame un mensaje.</p>
+    <div class="typeform-widget" data-url="https://form.typeform.com/to/Hhy2XaQ1" data-transparency="50" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 350px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=Hhy2XaQ1&utm_source=typeform.com-01EEX1HK97YDJHP13BGM3VW8AB-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container justify-content-around">
+      <div class="row">
+        <!-- Redes sociales -->
+        <div class="col-md-3 col-lg-3 col-sm-12">
+          <div class="footer-links">
+            <a href="https://github.com/lubriongos" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/lucia-briongos/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <div class="col-md-9 col-lg-9 col-sm-12">
+          <div class="footer-copyright text-right">
+            Web hecha por <b>Lucia Briongos</b>, gracias a <strong>Le Wagon</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Meme Modal 1-->
+  <div class="meme-modal modal fade" id="memeModal1" tabindex="-1" role="dialog" aria-labelledby="memeModal1Label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <div class="container row justify-content-center">
+            <div class="col-lg-8">
+              <!-- imagen -->
+              <img class="img-fluid rounded mb-5" src="imagen/meme1.jpg"
+                alt="-Me dijiste que no tomabas. -Buenas decisiones." />
+              <button class="btn rounded font-weight-bold" data-dismiss="modal">
+                <i class="fas fa-times fa-fw"></i>
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Meme Modal 2-->
+  <div class="meme-modal modal fade" id="memeModal2" tabindex="-1" role="dialog" aria-labelledby="memeModal1Label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <div class="container row justify-content-center">
+            <div class="col-lg-8">
+              <!-- imagen -->
+              <img class="img-fluid rounded mb-5" src="imagen/meme2.jpg"
+                alt="Cuando el que te gusta pasa a tu lado y tú tratas de actuar natural" />
+              <button class="btn rounded font-weight-bold" data-dismiss="modal">
+                <i class="fas fa-times fa-fw"></i>
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Meme Modal 3-->
+  <div class="meme-modal modal fade" id="memeModal3" tabindex="-1" role="dialog" aria-labelledby="memeModal1Label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <div class="container row justify-content-center">
+            <div class="col-lg-8">
+              <!-- imagen -->
+              <img class="img-fluid rounded mb-5" src="imagen/meme3.jpg"
+                alt="Cuando tu gato se convierte en un capuchino" />
+              <button class="btn rounded font-weight-bold" data-dismiss="modal">
+                <i class="fas fa-times fa-fw"></i>
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Meme Modal 4-->
+  <div class="meme-modal modal fade" id="memeModal4" tabindex="-1" role="dialog" aria-labelledby="memeModal1Label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <div class="container row justify-content-center">
+            <div class="col-lg-8">
+              <!-- imagen -->
+              <img class="img-fluid rounded mb-5" src="imagen/meme4.jpg"
+                alt="Fui a buscar mi pelota debajo de tu cama... Karen, necesitamos ¡HABLAR!" />
+              <button class="btn rounded font-weight-bold" data-dismiss="modal">
+                <i class="fas fa-times fa-fw"></i>
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Meme Modal 5-->
+  <div class="meme-modal modal fade" id="memeModal5" tabindex="-1" role="dialog" aria-labelledby="memeModal1Label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <div class="container row justify-content-center">
+            <div class="col-lg-8">
+              <!-- imagen -->
+              <img class="img-fluid rounded mb-5" src="imagen/meme5.jpg"
+                alt="Cuando llevas apenas 2 semanas de gym y no ves cambios... ia stoy arto" />
+              <button class="btn rounded font-weight-bold" data-dismiss="modal">
+                <i class="fas fa-times fa-fw"></i>
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Meme Modal 6-->
+  <div class="meme-modal modal fade" id="memeModal6" tabindex="-1" role="dialog" aria-labelledby="memeModal1Label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <div class="container row justify-content-center">
+            <div class="col-lg-8">
+              <!-- imagen -->
+              <img class="img-fluid rounded mb-5" src="imagen/meme6.jpg"
+                alt="-¿Quién murió y resucitó para salvar el mundo? -Jesús -¿Y por qué pusiste Goku?" />
+              <button class="btn rounded font-weight-bold" data-dismiss="modal">
+                <i class="fas fa-times fa-fw"></i>
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* Función para votar en la sección de memes */
+
+    $(function () {
+      var star = '.fa-star',
+        selected = '.selected',
+        transCat = false,
+        transDog = false;
+      $(star).on('click', function () {
+        $(this).parent().children().each(function () {
+          $(this).removeClass('selected');
+        });
+        $(this).addClass('selected');
+      });
+
+      /* Función para elegir mejor video */
+      $(function () {
+        var $inputBtns = $('.viBtn');
+        $inputBtns.click(function () {
+          var getValueButton = this.id;
+          $inputBtns.not('#' + getValueButton).prop('disabled', true);
+        });
+        $('#C').click(function () {
+          $inputBtns.prop('disabled', false);
+        });
+      });
+
+      /* Función para traducir testimonio del gato */
+      $("#catBtn").click(function () {
+        if (!transCat) {
+          $("#cat").html($("#cat").attr("data-translate"));
+          transCat = true;
+          $(this).html("Volver original");
+        } else {
+          $("#cat").html($("#cat").attr("data-texto"));
+          transCat = false;
+          $(this).html("Ver traducido");
+        }
+      })
+
+      /* Función para traducir testimonio del perro */
+      $("#dogBtn").click(function () {
+        if (!transDog) {
+          $("#dog").html($("#dog").attr("data-translate"));
+          transDog = true;
+          $(this).html("Volver original");
+        } else {
+          $("#dog").html($("#dog").attr("data-texto"));
+          transDog = false;
+          $(this).html("Ver traducido");
+        }
+      })
+
+    }); </script>
+
+</body>
+
+</html>
